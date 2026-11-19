@@ -26,14 +26,15 @@ MX = 32                      # outer margin
 CW = 960                     # content width
 RX = MX + CW                 # right content edge (992)
 
-PANELS_DIR = os.path.expanduser("~/workspace/makefun/news-image-20261118-panels")
+PANELS_DIR = os.path.expanduser(
+    "~/workspace/makefun/news-image-20261118-panels-photo")
 PANELS = {
-    "lead": "media-generation-panel1-quad-manila-0-701b0b43-3775-4ecf-956c-c73afcc4fb96.webp",
-    "crimea": "media-generation-panel2-crimean-bridge-0-6d3a6d9b-8073-42d1-85b3-3c3bd46d18cb.webp",
-    "gulf": "media-generation-panel3-iran-drones-0-ae0fc9b4-314f-4052-9157-a59c84029d5c.webp",
-    "cyclone": "media-generation-panel4-cyclone-0-c9fe8f91-816b-4e8b-be84-b788feb21c36.webp",
-    "nvidia": "media-generation-panel5-nvidia-0-0403bc42-0437-486c-b209-6ec835411acf.webp",
-    "eu": "media-generation-panel6-eu-ukraine-0-9ca0146c-6f2c-4b1e-9785-edbbf5b126eb.webp",
+    "lead": "panel1-apec.jpg",
+    "crimea": "panel2-crimea.jpg",
+    "gulf": "panel3-gulf.jpg",
+    "cyclone": "panel4-cyclone.jpg",
+    "nvidia": "panel5-nvidia.jpg",
+    "eu": "panel6-eu.jpg",
 }
 
 # ---------------------------------------------------------------- fonts
@@ -199,11 +200,11 @@ def main():
 
     # ---- row A: two stories, photo left ----------------------------------
     row_a = [
-        ("crimea", 0.72, 0.55, "War in Europe",
+        ("crimea", 0.45, 0.55, "War in Europe",
          "Ukraine Cripples the Crimea Bridge",
          "Drones and missiles drop the central arch into the sea on the "
          "second day of strikes."),
-        ("gulf", 0.5, 0.5, "Middle East",
+        ("gulf", 0.55, 0.5, "Middle East",
          "US and Iran Trade Blows Across the Gulf",
          "US jets hit Qeshm Island; Iran strikes a US base in Kuwait and "
          "sites in Bahrain."),
